@@ -1,0 +1,64 @@
+{% extends 'bases/base_new_share.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="newShare-principal">
+    <div class="img-column">
+      <div class="newShare-column">
+        <img src="{% static 'images/MEGASONHO-Logo-form.svg' %}" alt="" />
+      </div>
+    </div>
+    <div class="newShare-column2">
+      <div class="headercolumn2">
+        <a href="./invest.html"
+          ><img src="{% static 'images/MEGASONHO-close.svg' %}" alt=""
+        /></a>
+      </div>
+      <div class="shareheader">
+        <h1>Novo Compartilhamento</h1>
+        <h3>Pegar dados de outros bancos</h3>
+      </div>
+      <div class="contentBanking">
+        <h3>Instituição de Origem dos Dados</h3>
+        <span>Itaú</span>
+        <h3>Qual o objetivo do compartilhamento de dados?</h3>
+        <ul>
+          <li>
+            Ter visão integrada das finanças para dicas e ofertas
+            personalizadas
+          </li>
+          <li>Análise de crédito</li>
+          <li>Gestão e Oferta de Benefícios e Assinaturas personalizadas</li>
+        </ul>
+        <h3>Quais dados vou compartilhar?</h3>
+        <ul>
+          <li>Dados Cadastrais - Pessoa Física</li>
+          <li>Dados da Conta</li>
+          <li>Dados de Cartões</li>
+          <li>Operação de Crédito</li>
+        </ul>
+        <a>Ver mais detalhes<img src="{% static 'images/Seta-cinza.svg' %}" /></a>
+        <div class="allert">
+          <img src="{% static 'images/allert.svg' %}" alt="" />
+          <label
+            >Ao compartilhar seus dados com o BTG, você também compartilha com
+            as outras instituições do BTG Pactual e parceiros.</label
+          >
+        </div>
+        <h3>Por quanto tempo você quer compartilhar seus dados?</h3>
+        <span>12 meses</span>
+      </div>
+      <div class="baseboard">
+        <form action="redirect.html" method="post">
+          <input type="checkbox" />
+          <span>Aceito os <span class="terms">Termos e Condições</span></span>
+          <button type="submit" class="btnContinue">Continuar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="bar-end"></div>
+
+{% endblock %}

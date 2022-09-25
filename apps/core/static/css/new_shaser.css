@@ -1,0 +1,326 @@
+:root {
+    --azul-marinho: #0b5ebf;
+    --amarelo: #fdc842;
+    --verde: #32bb4e;
+    --vermelho: #ff0000;
+    --branco: #ffffff;
+    --cinza-claro: #f4f4f4;
+    --cinza-escuro: #2e3d45;
+    --preto: #1b1b1b;
+  }
+  body,
+  h1,
+  h2,
+  h3,
+  h4 {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+  }
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  .newShare-principal {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  .img-column {
+    background-image: url("../images/newShare.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+    width: 50%;
+    height: 100vh;
+    max-height: 100%;
+  }
+  .newShare-column {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  .newShare-column img {
+    position: fixed;
+    width: 352.17px;
+    height: 49.73px;
+  }
+  .newShare-column2 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 80px;
+  }
+  .headercolumn2 {
+    display: flex;
+    justify-content: end;
+    height: 120px;
+    align-items: center;
+  }
+  .headercolumn2 > img {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+  }
+  .shareheader {
+    width: 448px;
+    height: 95px;
+    border-bottom: 1px solid var(--cinza-claro);
+  }
+  .shareheader > h1 {
+    font-family: "Hind";
+    height: 55px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    color: var(--cinza-escuro);
+  }
+  .shareheader > h3 {
+    opacity: 0.8;
+    font-family: "Hind";
+    height: 24px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--cinza-escuro);
+  }
+  .contentBanking {
+    height: 320px;
+    display: flex;
+    margin-top: -8px;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+  .contentBanking h3 {
+    margin-top: 32px;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 700;
+    height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.9;
+    color: var(--cinza-escuro);
+    margin-bottom: 12px;
+  }
+  .contentBanking span {
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--cinza-escuro);
+    opacity: 0.7;
+  }
+  .contentBanking ul {
+    margin-left: 20px;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--cinza-escuro);
+    opacity: 0.7;
+  }
+  .contentBanking li {
+    margin-bottom: 12px;
+  }
+  .contentBanking a {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 24px;
+    width: 124px;
+    height: 25px;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--cinza-escuro);
+  }
+  .contentBanking a > img {
+    display: block;
+    height: 13.33px;
+    width: 13.33px;
+    margin-left: 134px;
+    margin-top: -20px;
+  }
+  .allert {
+    display: flex;
+    margin-top: 34px;
+    width: 448px;
+    height: 95px;
+    border-radius: 2px;
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  .allert > label {
+    margin-left: 8px;
+    opacity: 0.9;
+    color: var(--cinza-escuro);
+    width: 391px;
+    height: 75px;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .allert > img {
+    width: 18px;
+    height: 18px;
+  }
+  .bar-end {
+    width: 100%;
+    margin-top: -8px;
+    height: 8px;
+    background: linear-gradient(
+      88.31deg,
+      #1374de -6.73%,
+      #33a3fd 51.52%,
+      #d9d9d9 98.57%
+    );
+  }
+  .baseboard {
+    display: flex;
+    height: 165px;
+    margin-top: 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .baseboard form {
+    margin-top: 32px;
+  }
+  .baseboard input {
+    width: 16px;
+    height: 16px;
+    color: var(--azul-marinho);
+  }
+  
+  .terms {
+    color: var(--azul-marinho);
+  }
+  .btnContinue {
+    width: 448px;
+    height: 44px;
+    background-color: var(--cinza-claro);
+    border-radius: 100px;
+    border: none;
+    margin-top: 56px;
+    box-sizing: border-box;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--cinza-escuro);
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  .contentBanking h4 {
+    width: 124px;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--cinza-escuro);
+  }
+  @media (max-width: 896px) {
+    .header {
+      height: 750px;
+    }
+    .newShare-principal {
+      flex-direction: column;
+      align-items: center;
+    }
+    .img-column {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+    }
+    .newShare-column {
+      margin: 0;
+      width: 100vw;
+      height: 24px;
+    }
+    .newShare-column img {
+      margin-left: -160px;
+      margin-top: 30px;
+      width: 164px;
+      height: 24px;
+    }
+    .newShare-column2 {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      margin-top: 80px;
+      width: 335px;
+      height: 339px;
+      border-radius: 4px;
+      background-color: var(--branco);
+      margin-left: 0px;
+      padding-top: 24px;
+    }
+    .bar-progress-collum2 {
+      width: 295px;
+      margin: 0;
+    }
+    .bar-progress {
+      width: 295px;
+    }
+    .progress-bar {
+      width: 59px;
+      height: 10px;
+    }
+    .iconblue {
+      margin-top: -25px;
+      margin-left: 30px;
+    }
+    .description input {
+      width: 38px;
+      height: 38px;
+      margin-left: 11px;
+    }
+    .description h1 {
+      font-family: "Hind";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 38px;
+      width: 295px;
+      height: 76px;
+      color: var(--cinza-escuro);
+    }
+    .description h3 {
+      font-family: "Hind";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 25px;
+      width: 295px;
+      height: 50px;
+    }
+    .input {
+      width: 250px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+    }
+    .bar-end {
+      width: 100vw;
+      height: 1vh;
+      left: 0px;
+      margin-top: 100vh;
+      background: linear-gradient(
+        88.31deg,
+        #1374de -6.73%,
+        #33a3fd 51.52%,
+        #d9d9d9 98.57%
+      );
+    }
+  }

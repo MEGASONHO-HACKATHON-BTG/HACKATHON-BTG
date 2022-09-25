@@ -1,0 +1,47 @@
+{% extends 'bases/base_redirect.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="redirect-principal">
+    <div class="img-column">
+      <div class="redirect-column">
+        <img src="{% static 'images/MEGASONHO-Logo-form.svg' %}" alt="" />
+      </div>
+    </div>
+    <div class="redirect-column2">
+      <div class="headercolumn2">
+        <a href="./newShare.html"
+          ><img src="{% static 'images/MEGASONHO-close.svg' %}" alt=""
+        /></a>
+      </div>
+      <div class="redirectheader">
+        <h1>Redirecionamento</h1>
+        <h3>
+          Solicitamos seus dados com Open Finance. Agora você precisa concluir
+          alguns passos na outra instituição para autorizar o envio deles.
+        </h3>
+      </div>
+      <div class="bankingTransfer">
+        <img src="{% static 'images/redirect_img.svg' %}" alt="" />
+      </div>
+      <div class="redirectAnimation">
+        <lottie-player
+          src="https://assets10.lottiefiles.com/packages/lf20_ht6o1bdu.json"
+          background="transparent"
+          speed="1"
+          style="width: 80px; height: 80px"
+          loop
+          autoplay
+        ></lottie-player>
+        <h3>
+          Estamos redirecionando você para o ambiente de instituição de origem
+          dos dados...
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="bar-end"></div>
+
+{% endblock %}

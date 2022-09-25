@@ -1,0 +1,49 @@
+{% extends 'bases/base_dashboard.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<header class="header">
+  <nav class="headermenu">
+    <img
+      class="logo"
+      src="{% static 'images/MEGASONHO-Logo-form.svg' %}"
+      alt="Logo MEGASONHO"
+    />
+    <ul>
+      <a href=""><li>Extrato</li></a>
+      <a href=""><li>Cartão</li></a>
+      <a href=""><li>Pagamento</li></a>
+    </ul>
+    <button class="btnBonus">🎉 Aproveitar Bônus</button>
+    <div class="iconprofile">T</div>
+  </nav>
+</header>
+<article class="headerContent">
+  <div>
+    <h3>É um prazer ter você com a gente</h3>
+    <h1>Tiago Bispo</h1>
+    <img src="{% static 'images/arrowBlue.svg' %}" alt="" class="arrowBlue" />
+  </div>
+  <div>
+    <button type="submit" class="btnWallet">
+      <img src="{% static 'images/Wallet.svg' %}" />Adicionar novo banco
+    </button>
+  </div>
+</article>
+<div class="balanceContent">
+  <div class="walletContent">
+    <div class="Wallet">
+      <span>Saldo total</span>
+      <h1>R$ 990,90</h1>
+      <img src="{% static 'images/iconVisibility.svg' %}" alt="" />
+    </div>
+    <div class="walletNumbers">
+      <span>Números da Sorte</span>
+      <h1>20 Números</h1>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

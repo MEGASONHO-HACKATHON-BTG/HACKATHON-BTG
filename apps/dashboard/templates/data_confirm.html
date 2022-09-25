@@ -1,0 +1,63 @@
+{% extends 'bases/base_new_share.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="newShare-principal">
+    <div class="img-column">
+      <div class="newShare-column">
+        <img src="{% static 'images/MEGASONHO-Logo-form.svg'%}" alt="" />
+      </div>
+    </div>
+    <div class="newShare-column2">
+      <div class="headercolumn2">
+        <a href="./invest.html"
+          ><img src="{% static 'images/MEGASONHO-close.svg' %}" alt=""
+        /></a>
+      </div>
+      <div class="shareheader">
+        <h1>Novo Compartilhamento</h1>
+        <h3>Verifique seus dados para o envio do seu Cartão</h3>
+      </div>
+      <div class="contentBanking">
+        <h3>Nome Completo:</h3>
+        <input type="text" value="testando" />
+        <h3>CPF:</h3>
+        <input type="text" value="" />
+
+        <h3>Telefone:</h3>
+        <input type="text" value="" />
+
+        <h3>Email:</h3>
+        <input type="text" value="" />
+
+        <h3>Endereço:</h3>
+        <input type="text" value="" />
+
+        <h3>Estado</h3>
+        <input type="text" value="" />
+
+        <h3>Cidade</h3>
+        <input type="text" value="" />
+
+        <a>Ver mais detalhes<img src="{% static 'images/Seta-cinza.svg' %}" /></a>
+        <div class="allert">
+          <img src="{% static 'images/allert.svg' %}" alt="" />
+          <label
+            >Ao compartilhar seus dados com o BTG, você também compartilha com
+            as outras instituições do BTG Pactual e parceiros.</label
+          >
+        </div>
+      </div>
+      <div class="baseboard">
+        <form action="sendConfirm.html" method="post">
+          <input type="checkbox" />
+          <span>Aceito os <span class="terms">Termos e Condições</span></span>
+          <button type="submit" class="btnContinue">Continuar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="bar-end"></div>
+{% endblock %}

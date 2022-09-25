@@ -1,0 +1,60 @@
+{% extends 'bases/base_invest.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<header class="headerInvest">
+    
+    <img
+      class="logoWhite"
+      src="{% static 'images/MEGASONHO-Payment-log.svg' %}"
+      alt="MEGASONHO "
+    />
+    <div class="socialMedias">
+      <a href="#"
+        ><img
+          class="whatsapp"
+          src="{% static 'images/MEGASONHO-WhatsApp-icon.svg' %}"
+          alt="Whatsapp"
+      /></a>
+      <a href="#"
+        ><img src="{% static 'images/social-media-instagram.svg' %}" alt="Instagram"
+      /></a>
+  
+    </div>
+  </header>
+  <article class="invest">
+    <div class="investContent">
+    <div class="investContentText">
+      <h1>
+        Aqui será um título em destaque, mas deixarei um texto de apoio.
+      </h1>
+      <h3>
+        Aqui será uma descrição para completar o título de apoio, mas deixarei
+        um texto de apoio para preencher a copy.
+      </h3>
+    </div>
+    <div class="investForm">
+      <h3>Selecione a sua instituição financeira para participar</h3>
+      <span>Você pode selecionar 1 ou mais instituições</span>
+      <div class="bankings">
+        <div class="firstBankings">
+
+          <img class="btg" src="{% static 'images/btgPactual.svg' %}" alt="" onclick="selectBank(1)">
+          <img class="caixa" src="{% static 'images/caixa.svg' %}" alt="" onclick="selectBank(2)">
+          <img class="itau" src="{% static 'images/itaulogo.svg' %}" alt="" onclick="selectBank(3)">
+        </div>
+        <div class="secoundBankings">
+          <img class="bradesco" src="{% static 'images/bradesco.svg' %}" alt="" onclick="selectBank(4)">
+          <img class="xp" src="{% static 'images/xpInvest.svg' %}" alt="" onclick="selectBank(5)">
+          <img class="BB" src="{% static 'images/BancoBrasil.svg' %}" alt="" onclick="selectBank(6)">
+          <img class="nubank" src="{% static 'images/Nubank.svg' %}" alt="" onclick="selectBank(7)">
+        </div>
+      </div>
+      <a href='#'><button class="btnContinue" id="btnContinue">Continuar<img src="{% static 'images/Seta-cinza.svg' %}" class="arrow"></img></button></a>
+    </div>
+  </div>
+  </article>
+
+{% endblock %}

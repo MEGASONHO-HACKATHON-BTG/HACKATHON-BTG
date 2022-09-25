@@ -1,0 +1,181 @@
+:root {
+    --azul-marinho: #0b5ebf;
+    --amarelo: #fdc842;
+    --verde: #32bb4e;
+    --vermelho: #ff0000;
+    --branco: #ffffff;
+    --cinza-claro: #f4f4f4;
+    --cinza-escuro: #2e3d45;
+    --preto: #1b1b1b;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  body a {
+    text-decoration: None
+  }
+  
+  .headerInvest {
+    position: absolute;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 400px;
+  }
+  
+  .logoWhite {
+    width: 227px;
+  }
+  .whatsapp {
+    width: 32px;
+  }
+  .invest {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    height: 100vh;
+    background-image: url("../images/disneyInvest.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .investContent {
+    display: flex;
+    gap: 170px;
+    margin: 0 auto;
+  }
+  
+  .investContentText {
+    margin-top: 60px;
+  }
+  .investContentText > h1 {
+    color: var(--branco);
+    width: 640px;
+    height: 108px;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+  }
+  .investContentText > h3 {
+    width: 640px;
+    height: 52px;
+    color: var(--branco);
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    opacity: 0.9;
+    margin-top: -20px;
+  }
+  .investForm {
+    padding: 40px 24px 40px 24px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    width: 360px;
+    height: 390.58px;
+    background-color: var(--branco);
+    border-radius: 16px;
+  }
+  .investForm > h3 {
+    margin-top: -20px;
+    max-width: 312px;
+    width: 312px;
+    height: 56px;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .investForm > span {
+    width: 300px;
+    height: 28px;
+  
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    opacity: 0.6;
+    color: var(--cinza-escuro);
+  }
+  .bankings {
+    padding-top: 10px;
+    width: 312px;
+    padding-bottom: 50px;
+  }
+  .bankings img {
+    cursor: pointer;
+  }
+  .btg {
+    width: 133.04px;
+    height: 52.82px;
+  }
+  .caixa {
+    width: 74.4px;
+    height: 16.5px;
+    margin-top: 20px;
+  }
+  
+  .itau {
+    width: 38.24px;
+    height: 33.01px;
+    margin-top: 10px;
+  }
+  .bradesco {
+    width: 44.56px;
+    height: 44.56px;
+  }
+  .xp {
+    width: 33.04px;
+    height: 29.71px;
+    margin-top: 10px;
+  }
+  .BB {
+    width: 39.61px;
+    height: 39.61px;
+    margin-top: 5px;
+  }
+  .nubank {
+    width: 41.26px;
+    height: 41.26px;
+    margin-top: 5px;
+  }
+  .firstBankings {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 312px;
+    height: 52.82px;
+  }
+  .secoundBankings {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 40px;
+    width: 307.02px;
+    height: 44.56px;
+  }
+  .btnContinue {
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    border-radius: 100px;
+    width: 309px;
+    height: 36px;
+  }
