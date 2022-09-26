@@ -1,0 +1,249 @@
+:root {
+  --azul-marinho: #0b5ebf;
+  --amarelo: #fdc842;
+  --verde: #32bb4e;
+  --vermelho: #ff0000;
+  --branco: #ffffff;
+  --cinza-claro: #f4f4f4;
+  --cinza-escuro: #2e3d45;
+  --preto: #1b1b1b;
+}
+body,
+h1,
+h2,
+h3,
+h4 {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+}
+button {
+  cursor: pointer;
+}
+.logoGreen {
+  position: absolute;
+  width: 86.66px;
+  height: 86.66px;
+  left: 355px;
+  top: 417.05px;
+}
+.header {
+  margin: 0 auto;
+  display: flex;
+  height: 110px;
+  width: 100vw;
+}
+.headermenu {
+  position: fixed;
+  z-index: 99999999;
+  display: flex;
+  width: 100vw;
+  height: 110px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  gap: 120px;
+  align-items: center;
+}
+.logo {
+  width: 207px;
+  height: 30px;
+}
+
+.headermenu li:before {
+  content: "";
+  opacity: 0.5;
+}
+.headermenu ul {
+  width: 258px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.headermenu a:hover {
+  opacity: 1;
+}
+.headermenu a {
+  text-decoration: none;
+  opacity: 0.5;
+  width: 51px;
+  height: 25px;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--azul-marinho);
+}
+.btnBonus {
+  margin-left: 30px;
+  border-radius: 100px;
+  border: none;
+  box-sizing: border-box;
+  width: 191px;
+  height: 39px;
+  padding: 4px 24px;
+  background-color: var(--verde);
+  color: var(--branco);
+  cursor: pointer;
+}
+.logoBlack {
+  position: absolute;
+  right: 20.01%;
+  top: 15.62%;
+}
+.headerContent {
+  height: 144px;
+  width: 100vw;
+  background-color: var(--azul-marinho);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 150px;
+}
+.headerContent h3 {
+  width: 234px;
+  height: 25px;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--branco);
+  opacity: 0.8;
+}
+.headerContent h1 {
+  width: 147px;
+  height: 38px;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  color: var(--branco);
+}
+.investorContent {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px;
+}
+.lineProgram {
+  display: flex;
+  margin: 0 auto;
+  width: 120px;
+  height: 5px;
+  background: var(--amarelo);
+  border-radius: 50px;
+  margin-bottom: 16px;
+}
+.font-medium {
+  width: 554px;
+  height: 52px;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--cinza-escuro);
+  opacity: 0.9;
+  padding-bottom: 40px;
+}
+.font-bold-1 {
+  width: 567px;
+  height: 50px;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: var(--cinza-escuro);
+  padding-bottom: 20px;
+}
+.span-blue {
+  color: var(--azul-marinho);
+}
+.font-llt-b {
+  height: 26px;
+  opacity: 0.9;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--cinza-escuro);
+  padding-bottom: 8px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  width: 350px;
+  gap: 40px;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+}
+form img {
+  cursor: pointer;
+}
+.btnRegister {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 184px;
+  height: 41px;
+  background: #0b5ebf;
+  border-radius: 100px;
+  color: var(--branco);
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+}
+.btnMore {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+  width: 150px;
+  height: 25px;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  background-color: var(--branco);
+}
+.baseBoard {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  height: 143px;
+  background: linear-gradient(
+    88.31deg,
+    #1374de -6.73%,
+    #33a3fd 51.52%,
+    #d9d9d9 98.57%
+  );
+  left: 0px;
+  bottom: 0px;
+}
+.socialMedia {
+  margin-left: 300px;
+  margin-top: 36px;
+}
+
+.MKbaseboard {
+  left: 889px;
+  bottom: 0;
+  position: absolute;
+  width: 520px;
+  height: 462.76px;
+}

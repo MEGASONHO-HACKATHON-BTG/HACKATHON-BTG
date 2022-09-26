@@ -1,0 +1,314 @@
+:root {
+  --azul-marinho: #0b5ebf;
+  --amarelo: #fdc842;
+  --verde: #32bb4e;
+  --vermelho: #ff0000;
+  --branco: #ffffff;
+  --cinza-claro: #f4f4f4;
+  --cinza-escuro: #2e3d45;
+  --preto: #1b1b1b;
+}
+body {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+}
+.payment-principal {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.img-column {
+  background-image: url(./Svg/MEGASONHO-FT-PRINCIPAL.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+  height: 100vh;
+  width: 50%;
+  max-height: 100%;
+}
+.payment-column {
+  position: absolute;
+  width: 352.17px;
+  height: 49.73px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 260px;
+}
+.payment-column img {
+  position: fixed;
+  width: 352.17px;
+  height: 49.73px;
+}
+.payment-column2 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 80px;
+}
+.bar-progress-collum2 {
+  width: 448px;
+  margin-top: 40px;
+}
+.bar-progress {
+  width: 368px;
+  height: 10px;
+  border-radius: 100px;
+  background-color: var(--cinza-claro);
+}
+.progress-bar {
+  width: 368px;
+  height: 10px;
+  background-color: var(--azul-marinho);
+  border-radius: 100px;
+}
+.iconblue {
+  margin-top: 15px;
+  margin-left: 330px;
+}
+.description h1 {
+  width: 384px;
+  height: 110px;
+  left: 1072px;
+  top: calc(50% - 110px / 2 - 345px);
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+  color: var(--cinza-escuro);
+}
+.description h3 {
+  width: 448px;
+  height: 60px;
+  left: 1072px;
+  top: 264px;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--cinza-escuro);
+}
+.payment-form {
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  color: var(--cinza-escuro);
+  opacity: 0.9;
+  width: 448px;
+  height: 64px;
+  background: #f4f4f4;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding-left: 64px;
+  outline: none;
+}
+.description h2 {
+  width: 448px;
+  height: 50px;
+  left: 1072px;
+  top: 430px;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--cinza-escuro);
+}
+.btn-payment {
+  color: var(--branco);
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 50px;
+  vertical-align: baseline;
+  gap: 10px;
+  width: 448px;
+  height: 44px;
+  background-color: var(--verde);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+  flex: none;
+  order: 1;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.input-payment {
+  display: flex;
+  height: 64px;
+}
+.icon-pix {
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 20px;
+}
+.bar-end {
+  width: 100%;
+  margin-top: -8px;
+  height: 8px;
+  background: linear-gradient(
+    88.31deg,
+    #1374de -6.73%,
+    #33a3fd 51.52%,
+    #d9d9d9 98.57%
+  );
+}
+@media (max-width: 896px) {
+  .header {
+    height: 750px;
+  }
+  .payment-principal {
+    background-image: url(./Svg/MEGASONHO-FT-PRINCIPAL.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+    height: 812px;
+  }
+  .img-column {
+    position: absolute;
+    width: 100vw;
+  }
+  .payment-column {
+    margin: 0;
+    width: 100vw;
+    margin-left: -160px;
+    
+  }
+  .payment-column img {
+    margin-left: 160px;
+    margin-top: 40px;
+    width: 164px;
+    height: 24px;
+  }
+  .payment-column2 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    gap: 10px;
+    width: 335px;
+    height: 498px;
+    margin-top: 90px;
+    margin-left: 0px;
+    background: var(--branco);
+    border-radius: 8px;
+  }
+  .bar-progress-collum2 {
+    width: 295px;
+    height: 40px;
+    margin-top: 10px;
+  }
+  .bar-progress {
+    width: 295px;
+  }
+  .progress-bar {
+    width: 280px;
+    height: 10px;
+  }
+  .iconblue {
+    margin-left: 250px;
+  }
+  .description h1 {
+    width: 295px;
+    height: 76px;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--cinza-escuro);
+  }
+  .description h3 {
+    width: 295px;
+    height: 50px;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--cinza-escuro);
+    opacity: 0.9;
+  }
+  .description h2 {
+    width: 295px;
+    height: 75px;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--cinza-escuro);
+    opacity: 0.9;
+  }
+  .input-payment {
+    align-items: flex-start;
+    width: 295px;
+    height: 41.11px;
+    margin-top: 16px;
+  }
+  .payment-form {
+    width: 295px;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    height: 41.11px;
+    color: var(--cinza-escuro);
+    opacity: 0.9;
+  }
+  .icon-pix {
+    width: 20.56px;
+    height: 20.56px;
+    margin-top: 12px;
+    position: absolute;
+  }
+  .input-number {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px 20px;
+    gap: 10px;
+    width: 295px;
+    height: 64px;
+    background: #f4f4f4;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  .btn-payment {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 295px;
+    height: 44px;
+    margin-top: 20px;
+    background-color: var(--verde);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+}

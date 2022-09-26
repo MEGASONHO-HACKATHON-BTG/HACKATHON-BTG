@@ -1,0 +1,381 @@
+:root {
+  --azul-marinho: #0b5ebf;
+  --amarelo: #fdc842;
+  --verde: #32bb4e;
+  --vermelho: #ff0000;
+  --branco: #ffffff;
+  --cinza-claro: #f4f4f4;
+  --cinza-escuro: #2e3d45;
+  --preto: #1b1b1b;
+}
+body {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+  font-family: "Hind";
+}
+button {
+  cursor: pointer;
+}
+.payment-confirm {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+.img-column {
+  background-image: url("../images/MEGASONHO-Confirm.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-attachment: fixed;
+  height: 1080px;
+  width: 50%;
+  max-height: 100%;
+}
+.confirm-payment {
+  width: 50%;
+  height: 49.73px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.number-column img {
+  position: fixed;
+  width: 352.17px;
+  height: 49.73px;
+}
+.number-column2 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 40px;
+}
+.bar-progress-collum2 {
+  width: 448px;
+  margin-top: 10px;
+}
+.bar-progress {
+  width: 368px;
+  height: 10px;
+  border-radius: 100px;
+  background-color: var(--cinza-claro);
+}
+.progress-bar {
+  width: 370px;
+  height: 10px;
+  background-color: var(--azul-marinho);
+  border-radius: 100px;
+}
+.iconblue {
+  margin-top: 15px;
+  margin-left: 330px;
+}
+.description h1 {
+  width: 384px;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+  color: var(--cinza-escuro);
+}
+.description h3 {
+  width: 448px;
+  height: 60px;
+  left: 1072px;
+  top: 264px;
+  margin-top: -20px;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  opacity: 0.9;
+  color: var(--cinza-escuro);
+}
+
+.description h2 {
+  width: 448px;
+  height: 50px;
+  left: 1072px;
+  top: 430px;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--cinza-escuro);
+}
+.confirm {
+  width: 431px;
+  height: 50px;
+}
+.confirm h4 {
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--cinza-escuro);
+  opacity: 0.8;
+  margin-left: 30px;
+}
+.confirm img {
+  position: absolute;
+  margin-left: -30px;
+}
+
+.mickey {
+  padding-top: -10px;
+}
+.btn-confirm {
+  cursor: pointer;
+  color: var(--branco);
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 10px;
+  gap: 10px;
+  width: 248px;
+  height: 44px;
+  padding-top: 5px;
+  background-color: var(--verde);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+}
+.bar-end {
+  width: 100%;
+  margin-top: -8px;
+  height: 8px;
+  background: linear-gradient(
+    88.31deg,
+    #1374de -6.73%,
+    #33a3fd 51.52%,
+    #d9d9d9 98.57%
+  );
+}
+.talkMore {
+  width: 95vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  margin-top: -20px;
+}
+.talkMore lottie-player {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+}
+.animation {
+  margin-top: 20px;
+  margin-right: 70px;
+}
+.mickeytalk {
+  width: 56px;
+  height: 62.39px;
+  margin-top: -40px;
+  margin-left: 0px;
+}
+.pop-up {
+  margin-right: 20px;
+  animation: ease;
+  box-sizing: border-box;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+  width: 371px;
+  height: 231px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+.pop-up h2 {
+  width: 190px;
+  height: 31px;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  margin-left: -40px;
+  margin-top: -10px;
+}
+.pop-up span {
+  width: 331px;
+  height: 75px;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--cinza-escuro);
+  opacity: 0.9;
+}
+.logoBlue {
+  position: absolute;
+  margin-left: -50px;
+  margin-top: -2px;
+}
+.btnPopup {
+  padding: 6px 92px;
+  width: 331px;
+  height: 36px;
+  background: var(--verde);
+  border-radius: 100px;
+  border: none;
+  color: var(--branco);
+  box-sizing: border-box;
+}
+.close {
+  position: absolute;
+  margin-left: 100px;
+}
+@media (max-width: 896px) {
+  .header {
+    height: 750px;
+  }
+  .payment-confirm {
+    background-image: url(./Svg/MEGASONHO-Confirm.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-column {
+    background-image: none;
+    width: 100vw;
+  }
+  .confirm {
+    width: 295px;
+    margin-top: 30px;
+  }
+  .confirm-payment {
+    margin-left: -160px;
+    margin-top: -10px;
+    width: 100vw;
+  }
+  .confirm-payment img {
+    margin-left: 160px;
+    margin-top: 40px;
+    width: 164px;
+    height: 24px;
+  }
+  .number-column2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 80px;
+    margin-left: 0px;
+    position: absolute;
+    width: 335px;
+    height: 693px;
+    background: var(--branco);
+    border-radius: 8px;
+  }
+  .bar-progress-collum2 {
+    width: 295px;
+    height: 40px;
+    margin-top: 20px;
+  }
+  .bar-progress {
+    width: 295px;
+  }
+  .progress-bar {
+    width: 295px;
+    height: 10px;
+  }
+  .iconblue {
+    margin-top: -25px;
+    margin-left: 250px;
+  }
+  .description {
+    margin-top: 50px;
+    margin-left: -300px;
+  }
+  .description h1 {
+    width: 295px;
+    height: 76px;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--cinza-escuro);
+  }
+  .description h3 {
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    width: 295px;
+    height: 50px;
+  }
+  .description h2 {
+    width: 295px;
+    height: 60px;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .input {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+  }
+  .input-number {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px 20px;
+    gap: 10px;
+    width: 295px;
+    height: 64px;
+    background: #f4f4f4;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  .number-form {
+    width: 141px;
+    height: 25px;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+  }
+  .icon-btnVerde {
+    width: 32px;
+    height: 32px;
+    margin-left: 236px;
+    margin-top: 0px;
+    position: absolute;
+  }
+  .btn-confirm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 10px;
+    width: 295px;
+    height: 44px;
+    margin-top: -10px;
+  }
+}

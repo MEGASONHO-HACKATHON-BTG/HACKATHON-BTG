@@ -1,0 +1,92 @@
+{% extends 'bases/base_confirm.html' %} {% load static %} {% block content %}
+
+<div class="payment-confirm">
+  <div class="img-column">
+    <div class="confirm-payment">
+      <img src="{% static 'images/MEGASONHO-Payment-log.svg' %}" alt="" />
+    </div>
+  </div>
+  <div class="number-column2">
+    <div class="bar-progress-collum2">
+      <img
+        src="{% static 'images/MEGASONHO-Icone-azul.svg' %}"
+        alt="iconazul"
+        class="iconblue"
+      />
+      <div class="bar-progress">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+
+    <div class="description">
+      <h1>Confirmação ✅</h1>
+      <h3>
+        Aqui será uma descrição para completar o título e falar o número da
+        sorte para o usuário:
+      </h3>
+      <div class="confirm">
+        <h4>
+          <img
+            src="{% static 'images/icon-mickey.svg' %}"
+            alt=""
+            class="mickey"
+          />Aqui será uma descrição imaginando algum cenário que possa ocorrer
+          com o usuário
+        </h4>
+        <h4>
+          <img
+            src="{% static 'images/icon-mickey.svg' %}"
+            alt=""
+            class="mickey"
+          />Aqui será uma descrição imaginando algum cenário que possa ocorrer
+          com o usuário
+        </h4>
+        <h4>
+          <img
+            src="{% static 'images/icon-mickey.svg' %}"
+            alt=""
+            class="mickey"
+          />Aqui será uma descrição imaginando algum cenário que possa ocorrer
+          com o usuário
+        </h4>
+        <button class="btn-confirm">Tenho uma dúvida</button>
+      </div>
+    </div>
+  </div>
+  <div class="talkMore">
+    <lottie-player
+      class="animation"
+      src="https://assets6.lottiefiles.com/packages/lf20_SCdC0F.json"
+      background="transparent"
+      speed="1"
+      style="margin-left: -20px"
+      autoplay
+    ></lottie-player>
+    <div class="pop-up">
+      <h2>
+        <img
+          src="{% static 'images/iconMegaBlue.svg' %}"
+          class="logoBlue"
+          alt=""
+        />Lorem Ipsum
+        <img src="{% static 'images/Close.svg' %}" alt="" class="close" />
+      </h2>
+      <span
+        >Aqui será uma descrição para falar um pouco sobre o investimento e
+        benefíicios da MEGASONHO.</span
+      >
+      <form action="invest.html">
+        <button class="btnPopup">Invista e Concorra</button>
+      </form>
+    </div>
+    <img
+      src="{% static 'images/MickeyConfirm.svg' %}"
+      alt="mickey-talk"
+      class="mickeytalk"
+    />
+  </div>
+</div>
+
+<div class="bar-end"></div>
+
+{% endblock %}

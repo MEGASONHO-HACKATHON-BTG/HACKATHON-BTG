@@ -1,0 +1,52 @@
+{% extends 'bases/base_bonus.html' %} {% load static %} {% block content %}
+<!-- aqui fica o body do html -->
+<div class="bonus-principal">
+  <div class="bonus1">
+    <div class="bonusColum2">
+      <!-- pra carregar uma imagem é so copiar oq tem embaixo -->
+      <!-- e trocar o caminho de Css/svg pra {% static 'images/ARQUIVO' %} -->
+      <img src="{% static 'images/BonusMS.svg' %}" alt="" />
+    </div>
+    <div class="img-column">
+      <div class="bonus-column">
+        <div class="iconprofile"><span>T</span></div>
+        <img src="{% static 'images/MEGASONHO-Logo-form.svg' %}" alt="" />
+      </div>
+
+      <div class="bonusContent">
+        <div class="text-indv">
+          <h3 class="txt-low-w">
+            <div class="barBlue"></div>
+            10 VEZES <span class="txtColor-g">MAIS CHANCES</span>
+          </h3>
+        </div>
+
+        <h1 class="txt-Big-w">
+          A cada <span class="txtColor-Y">R$ 1,00</span> gasto, ganhe
+          <span class="txtColor-Y">1 número da sorte</span>!
+        </h1>
+        <h2 class="txt-Medium-w">
+          Aqui será uma descrição para completar o título de apoio, mas deixarei
+          um texto de apoio.
+        </h2>
+        <form action="dataConfirm.html">
+          
+        </form>
+        <a href="{% url 'megasonho:data_confirm' %}"><button class="btnContinue" type="submit">
+          Quero fazer parte
+          <img src="{% static 'images/arrow-white.svg' %}" alt="" />
+        </button></a>
+        <div class="socialMedias">
+          <a href=""
+            ><img src="{% static 'images/Social-media-whatsapp.svg' %}" alt=""
+          /></a>
+          <a href=""
+            ><img src="{% static 'images/social-media-instagram.svg' %}" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bar-end"></div>
+{% endblock %}

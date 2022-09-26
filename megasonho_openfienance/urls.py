@@ -1,7 +1,12 @@
 from django.contrib import admin
-from django.urls import path, include
+from django.shortcuts import redirect
+from django.urls import path, include, reverse
+
+def index(request):
+    return redirect(reverse('megasonho:invest'))
 
 urlpatterns = [
+    path('', index),
     path('admin/', admin.site.urls),
-    path('teste/', include('apps.dashboard.urls', namespace='accounts'))
+    path('megasonho/', include('apps.dashboard.urls', namespace='megasonho'))
 ]

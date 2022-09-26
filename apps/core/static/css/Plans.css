@@ -1,0 +1,332 @@
+:root {
+  --azul-marinho: #0b5ebf;
+  --amarelo: #fdc842;
+  --verde: #32bb4e;
+  --vermelho: #ff0000;
+  --branco: #ffffff;
+  --cinza-claro: #f4f4f4;
+  --cinza-escuro: #2e3d45;
+  --preto: #1b1b1b;
+}
+body {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+}
+.plans-principal {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.img-column {
+  background-image: url("Svg/MEGASONHO-10-Plans.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-attachment: fixed;
+  width: 50%;
+  height: 1040px;
+
+}
+.plans-column {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-left: 190px;
+}
+.plans-column img {
+  position: FIXED;
+  width: 352.17px;
+  height: 49.73px;
+}
+.plans-column2 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 80px;
+}
+.bar-progress-collum2 {
+  width: 448px;
+  margin-top: 40px;
+}
+.bar-progress {
+  width: 368px;
+  height: 10px;
+  border-radius: 100px;
+  background-color: var(--cinza-claro);
+}
+.progress-bar {
+  width: 368px;
+  height: 10px;
+  background-color: var(--azul-marinho);
+  border-radius: 100px;
+}
+.iconblue {
+  margin-top: 15px;
+  margin-left: 320px;
+}
+.description h1 {
+  width: 384px;
+  height: 110px;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+  color: var(--cinza-escuro);
+}
+.description h3 {
+  width: 448px;
+  height: 60px;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  opacity: 0.9;
+  color: var(--cinza-escuro);
+}
+.input h2 {
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 100px;
+  color: var(--amarelo);
+  height: 100px;
+}
+.input {
+  margin-top: -80px;
+  width: 448px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.mickey {
+  position: absolute;
+  margin-top: -2px;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.bar-end {
+  width: 100%;
+  margin-top: -8px;
+  height: 8px;
+  background: linear-gradient(
+    88.31deg,
+    #1374de -6.73%,
+    #33a3fd 51.52%,
+    #d9d9d9 98.57%
+  );
+}
+.hundred{
+  width: 448px;
+  height: 146px;
+}
+.promo-hundred{
+  transition: 0.5s ease-in;
+  position: absolute;
+}
+.promo-hundred::before {
+  cursor: pointer;
+  margin-top: -50px;
+  
+}
+.promo-hundred:hover{
+  margin-top: -10px;
+  cursor: pointer;
+}
+.plan1{
+  background-image: url("Svg/card-25-numbers.svg");
+  transition: 0.5s unset;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  width: 216px;
+  height: 148px;
+}
+.plan1:hover{
+  background-image: url("Svg/ten-numbers.svg");
+  width: 236px;
+  height: 163px;
+  margin-left: -20px;
+  margin-top: -16px; 
+  background-repeat: no-repeat;
+}
+.plan2{
+  background-image: url("Svg/card-50-numbers.svg");
+  transition: 0.5s unset;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  width: 216px;
+  height: 148px;
+}
+.plan2:hover{
+  background-image: url("Svg/ten-number149.svg");
+  width: 236px;
+  height: 163px;
+  margin-left: -20px;
+  margin-top: -16px; 
+  background-repeat: no-repeat;
+}
+.plan3{
+  background-image: url("Svg/card-03-numbers.svg");
+  transition: 0.5s unset;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  width: 216px;
+  height: 148px;
+}
+.plan3:hover{
+  background-image: url("Svg/ten-number24.svg");
+  width: 236px;
+  height: 163px;
+  margin-left: -20px;
+  margin-top: -16px; 
+  background-repeat: no-repeat;
+}
+.plan4{
+  background-image: url("Svg/card-10-numbers.svg");
+  transition: 0.5s unset;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  width: 216px;
+  height: 148px;
+}
+.plan4:hover{
+  background-image: url("Svg/ten-numbers49.svg");
+  width: 236px;
+  height: 163px;
+  margin-left: -20px;
+  margin-top: -16px; 
+  background-repeat: no-repeat;
+}
+.plans-min {
+  margin-top: 12.25px;
+  gap: 16px;
+  display: flex;
+  width: 448px;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+@media (max-width: 896px) {
+  .header {
+    height: 750px;
+  }
+  .plans-principal {
+    background-image: url("Svg/MEGASONHO-10-Plans.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    height: 812px;
+  }
+  .img-column {
+    position: absolute;
+    width: 100vw;
+    height: 1000px;
+    background-size:400%;
+  }
+  .plans-column {
+    margin: 0;
+    width: 100vw;
+    height: 24px;
+  }
+  .plans-column img {
+    margin-left: -160px;
+    margin-top: 20px;
+    width: 164px;
+    height: 24px;
+  }
+  .plans-column2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    width: 335px;
+    height: 679.2px;
+    background: var(--branco);
+    border-radius: 8px;
+    margin-top: 60px;
+    margin-left: 0px;
+  }
+  .bar-progress-collum2 {
+    width: 315px;
+    margin: 0;
+    align-items: center;
+  }
+  .bar-progress {
+    margin-left: 20px;
+    width: 295px;
+  }
+  .progress-bar {
+    width: 59px;
+    height: 10px;
+  }
+  .iconblue {
+    margin-top: -25px;
+    margin-left: 30px;
+  }
+  .description {
+    width: 335px;
+  }
+  .description h1 {
+    margin-left: 20px;
+    width: 295px;
+    height: 76px;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--cinza-escuro);
+  }
+  .description h3 {
+    margin-left: 20px;
+    width: 295px;
+    height: 50px;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    opacity: 0.9;
+    color: var(--cinza-escuro);
+  }
+  .description h2 {
+    
+    height: 70px;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    color: var(--amarelo);
+  }
+  .input {
+    width: 335px;
+  }
+  .input img {
+    height: 96.14px;
+    width: 300px;
+  }
+  .plans-min {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 335px;
+    margin-left: 40px;
+    gap: 10px;
+  }
+  .plans-min img{
+    width: 142.23px;
+
+  }
+  .bar-end {
+    width: 100vw;
+    background: linear-gradient(88.31deg, #1374DE -6.73%, #33A3FD 51.52%, #D9D9D9 98.57%);
+  }
+}

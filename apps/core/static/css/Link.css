@@ -1,0 +1,315 @@
+:root {
+  --azul-marinho: #0b5ebf;
+  --amarelo: #fdc842;
+  --verde: #32bb4e;
+  --vermelho: #ff0000;
+  --branco: #ffffff;
+  --cinza-claro: #f4f4f4;
+  --cinza-escuro: #2e3d45;
+  --preto: #1b1b1b;
+}
+body {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+}
+.link-principal {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.img-column {
+  background-image: url("Svg/MEGASONHO-9-link.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-attachment: fixed;
+  width: 50%;
+  height: 1040px;
+  max-height: 100%;
+}
+.link-column {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-left: 190px;
+}
+.link-column img {
+  position: fixed;
+  width: 352.17px;
+  height: 49.73px;
+}
+.link-column2 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 80px;
+}
+.bar-progress-collum2 {
+  width: 448px;
+  margin-top: 40px;
+}
+.bar-progress {
+  width: 368px;
+  height: 10px;
+  border-radius: 100px;
+  background-color: var(--cinza-claro);
+}
+.progress-bar {
+  width: 294.4px;
+  height: 10px;
+  background-color: var(--azul-marinho);
+  border-radius: 100px;
+}
+.iconblue {
+  margin-top: 15px;
+  margin-left: 240px;
+}
+.description h1 {
+  width: 384px;
+  height: 110px;
+  margin-top: 45px;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+  color: var(--cinza-escuro);
+}
+.description h3 {
+  width: 448px;
+  height: 60px;
+  margin-top: 16px;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--cinza-escuro);
+}
+.description input {
+  width: 448px;
+  height: 48px;
+  margin-top: 24px;
+  background-color: var(--cinza-claro);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--azul-marinho);
+  text-align: center;
+  outline: none;
+  border: 2px solid rgba(46, 61, 69, 0.2); 
+  border-radius: 4px;
+}
+.copy-link{
+    height: 80px;
+    display: flex;
+}
+.copy{
+    cursor: pointer;
+    position: absolute;
+    margin-left: 385px;
+    order: 1;
+    height: 48px;
+    width: 60px;
+    margin-top: 12px;
+}
+.input h4 {
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  opacity: 0.9;
+  margin-top: -5px;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.btncontinue {
+  width: 448px;
+  height: 44px;
+  vertical-align: baseline;
+  background-color: var(--verde);
+  border-radius: 100px;
+  border: none;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 5px;
+  text-align: center;
+  color: var(--branco);
+  cursor: pointer;
+  margin-top: 50px;
+}
+.bar-end {
+  width: 100%;
+  margin-top: -8px;
+  height: 8px;
+  background: linear-gradient(
+    88.31deg,
+    #1374de -6.73%,
+    #33a3fd 51.52%,
+    #d9d9d9 98.57%
+  );
+}
+.icon-wpp {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  margin-top: 60px;
+  margin-bottom: 16px;
+  margin-left: -300px;
+  color: var(--verde);
+}
+@media (max-width: 896px) {
+  .header {
+    height: 750px;
+  }
+  .link-principal{
+    flex-direction:column;
+    align-items: center;
+  }
+  .img-column{
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+  .link-column{
+    margin: 0;
+    width: 100vw;
+    height: 24px;
+  }
+  .link-column img{
+    margin-left: -160px;
+    margin-top: 40px;
+    width: 164px;
+    height: 24px;
+  }
+  .link-column2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+    width: 335px;
+    height: 452px;
+    top: 80px;
+    margin-right: 80px;
+    background: var(--branco);
+    border-radius: 8px;
+  }
+  .bar-progress-collum2{
+    width: 295px;
+    padding: 20px 24px 20px 24px;
+    margin: 0;
+  }
+  .bar-progress{
+    width: 295px;
+  }
+  .progress-bar {
+    width: 59px;
+    height: 10px;
+  }
+  .iconblue{
+    margin-top: -25px;
+    margin-left: 30px;
+  }
+  .description h1 {
+    width: 295px;
+    height: 76px;
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--cinza-escuro);
+  }
+  .description h3 {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    width: 295px;
+    height: 50px;
+  }
+  .description h4 {
+    width: 295px;
+    height: 40px;
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--cinza-escuro);  
+    opacity: 0.9;
+  }
+  .input {
+    width: 220px;
+    height: 24px;
+    left: 16px;
+    top: 12px;
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #0B5EBF;
+    
+  }
+  .input-number {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px 20px;
+    gap: 10px;
+    width: 295px;
+    height: 64px;
+    background: var(--branco);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  .copy-link {
+    width: 295px;
+    left: 0px;
+    top: 0px;
+    background: var(--branco);
+    border-radius: 4px;
+  }
+  .copy {
+    width: 59px;
+    height: 48px;
+    margin-left: 232px;
+
+  }
+  .btncontinue {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 10px;
+    width: 295px;
+    height: 44px;
+  }
+  .bar-end {
+    width: 100vw;
+    height: 1vh;
+    left: 0px;
+    margin-top: 100vh;
+    background: linear-gradient(88.31deg, #1374DE -6.73%, #33A3FD 51.52%, #D9D9D9 98.57%);
+  }
+}

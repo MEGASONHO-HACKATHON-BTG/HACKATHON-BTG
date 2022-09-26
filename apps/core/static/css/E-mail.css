@@ -1,0 +1,234 @@
+:root {
+    --azul-marinho: #0b5ebf;
+    --amarelo: #fdc842;
+    --verde: #32bb4e;
+    --vermelho: #ff0000;
+    --branco: #ffffff;
+    --cinza-claro: #f4f4f4;
+    --cinza-escuro: #2e3d45;
+    --preto: #1b1b1b;
+  }
+  body {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+  }
+  .e-mail-principal {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  .img-column {
+    background-image: url("Svg/MEGASONHO-5-Email.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+    width: 50%;
+    height: 1040px;
+    max-height: 100%;
+  }
+  .e-mail-column {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 190px;
+  }
+  .e-mail-column img {
+    position: fixed;
+    width: 352.17px;
+    height: 49.73px;
+  }
+  .e-mail-column2 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 80px;
+  }
+  .bar-progress-collum2 {
+    width: 448px;
+    margin-top: 40px;
+  }
+  .bar-progress {
+    width: 368px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: var(--cinza-claro);
+  }
+  .progress-bar {
+    width: 147.2px;
+    height: 10px;
+    background-color: var(--azul-marinho);
+    border-radius: 100px;
+  }
+  .iconblue {
+    margin-top: 15px;
+    margin-left: 100px;
+  }
+  .description h1 {
+    width: 384px;
+    height: 110px;
+    margin-top: 45px;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    color: var(--cinza-escuro);
+  }
+  .description h3 {
+    width: 448px;
+    height: 60px;
+    margin-top: 16px;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    opacity: 0.9;
+    color: var(--cinza-escuro);
+  }
+  .description input {
+    width: 48px;
+    height: 48px;
+    margin-top: 24px;
+    border-radius: 4px;
+    background-color: var(--cinza-claro);
+    border: none;
+    margin-left: 16px;
+    outline: 0;
+    text-align: center;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--cinza-escuro);
+    margin-bottom: 16px;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  .input {
+    margin-left: -16px;
+  }
+  .description label {
+    width: 201px;
+    height: 25px;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--cinza-escuro);
+    opacity: 0.9;
+  }
+  .description a{
+      color: var(--azul-marinho);
+      cursor: pointer;
+  }
+  .bar-end {
+    width: 100%;
+    margin-top: -8px;
+    height: 8px;
+    background: linear-gradient(
+      88.31deg,
+      #1374de -6.73%,
+      #33a3fd 51.52%,
+      #d9d9d9 98.57%
+    );
+  }
+  @media (max-width: 896px) {
+    .header {
+      height: 750px;
+    }
+    .e-mail-principal{
+      flex-direction:column;
+      align-items: center;
+    }
+    .img-column{
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+    }
+    .e-mail-column{
+      margin: 0;
+      width: 100vw;
+      height: 24px;
+    }
+    .e-mail-column img{
+      margin-left: -160px;
+      margin-top: 40px;
+      width: 164px;
+      height: 24px;
+    }
+    .e-mail-column2{
+      position: absolute;
+      display: flex;
+      align-items: center;
+      margin-top:80px;
+      width: 335px;
+      height: 339px;
+      border-radius: 4px;
+      background-color: var(--branco);
+      margin-left: 0px;
+      padding-top: 24px;
+      
+    }
+    .bar-progress-collum2{
+      width: 295px;
+      margin: 0;
+    }
+    .bar-progress{
+      width: 295px;
+    }
+    .progress-bar {
+      width: 59px;
+      height: 10px;
+    }
+    .iconblue{
+      margin-top: -25px;
+      margin-left: 30px;
+    }
+    .description input{
+      width: 38px;
+      height: 38px;
+      margin-left: 11px;
+    }
+    .description h1 {
+      font-family: 'Hind';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 38px;
+      width: 295px;
+      height: 76px;
+      color: var(--cinza-escuro);
+    }
+    .description h3 {
+      font-family: 'Hind';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 25px;
+      width: 295px;
+      height: 50px;
+    }
+    .input {
+      width: 250px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+    }
+    .bar-end {
+      width: 100vw;
+      height: 1vh;
+      left: 0px;
+      margin-top: 100vh;
+      background: linear-gradient(88.31deg, #1374DE -6.73%, #33A3FD 51.52%, #D9D9D9 98.57%);
+    }
+  }

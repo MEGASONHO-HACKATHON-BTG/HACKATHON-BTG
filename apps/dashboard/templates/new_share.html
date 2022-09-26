@@ -53,9 +53,9 @@
       <div class="baseboard">
         <form action="redirect.html" method="post">
           <input type="checkbox" />
-          <span>Aceito os <span class="terms">Termos e Condições</span></span>
-          <button type="submit" class="btnContinue">Continuar</button>
+          <span>Aceito os <span class="terms">Termos e Condições</span></span>          
         </form>
+        <a href="{% url 'dashboard:redirect_page' %}"><button class="btnContinue" id="btnContinue">Continuar<img src="{% static 'images/Seta-cinza.svg' %}" class="arrow"></img></button></a>
       </div>
     </div>
   </div>
